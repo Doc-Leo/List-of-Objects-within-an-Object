@@ -14,9 +14,9 @@ public class StudentReport {
     }
 
     public void generateReport() {
-        loadStudents("src/Studinfo.csv");
-        processFile("src/AddressInfo.csv", this::addAddress);
-        processFile("src/ParentInfo.csv", this::addParent);
+        loadStudents("Studinfo.csv");
+        processFile("AddressInfo.csv", this::addAddress);
+        processFile("ParentInfo.csv", this::addParent);
 
         students.forEach(Student::printReport);
     }
